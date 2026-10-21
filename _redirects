@@ -1,0 +1,14 @@
+# language aliases
+/en       /     301
+/en/*     /     301
+/uzb      /uz/  301
+/rus      /ru/  301
+# /uz/ and /ru/ pages share the root assets (runtime paths resolve relative to the page)
+/uz/assets/*  /assets/:splat  200
+/ru/assets/*  /assets/:splat  200
+/uz/css/*     /css/:splat     200
+/ru/css/*     /css/:splat     200
+/uz/js/*      /js/:splat      200
+/ru/js/*      /js/:splat      200
+/uz/lab/*     /lab/:splat     200
+/ru/lab/*     /lab/:splat     200
